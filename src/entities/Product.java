@@ -62,12 +62,8 @@ public class Product {
 		return true;
 	}
 
-	public static boolean staticProductPredicate(Product p) {  //works with the argument
-		return p.getPrice() >= 100.0;
-	}
-	
-	public boolean nonStaticProductPredicate() {  // class variable is accessed
-		return price >= 100.0;
+	public static void staticPriceUpDate(Product p) {
+		p.setPrice(p.getPrice() * 1.1);
 	}
 	
 	
